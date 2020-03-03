@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Afiliación Express Slot</title>
+    <!-- libs css -->
+    <link rel="stylesheet" href="jquery.slotmachine.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="estilos.css">
+
+
+</head>
+
+<body>
+    <div class="container-fluid" id="divGral">
+        <!-- back slider -->
+        <div id="carouselSlides" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/slide-01.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/slide-02.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/slide-03.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/slide-04.jpg" alt="Third slide">
+                </div>
+            </div>
+        </div>
+        <!-- end back slider -->
+
+        <!-- animación back formulario -->
+        <div class="flareTitle animated rotateIn infinite"></div>
+        <div class="titleForm"></div>
+
+        <div id="colForm">
+
+            <div class="luces">
+                <ul class="lights" id="lights">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+            </div>
+            <div class="monedas" id="monedas">
+                <ul class="coins" id="coins">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <!-- end animación back formulario -->
+            <!-- textos formulario completado -->
+            <div class="completeForm" id="completeForm">
+                <h1 style="font-size: 52px;">¡Pre afiliación EXITOSA!</h1><br>
+                <h2 style="font-size: 32px;">Bienvenido a Codere Club</h2><br>
+                <h4 style="font-size: 28px;">Lleva tu ticket a caja<br> con una identificación oficial <br>y obtén tu tarjeta con tu<br> recompensa de:</h4><br>
+                <h1 style="font-size: 42px;">1200 puntos</h1><br>
+                <h2 style="font-size: 32px;">¡Qué comience la diversión!</h2>
+                <p id="text-footer2" style="margin-top: 0px; color: aliceblue;">*Para recoger premios mayores a XXX <br> deberás completar tus datos en caja y portar tu INE</p>
+            </div>
+        </div>
+        <!-- end textos formulario completado -->
+
+        <!-- slot progressbar -->
+        <div class="slotBar" id="slotBar">
+            <div id="randomize">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div>
+                            <div id="machine1" class="slot1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div>
+                            <div id="machine2" class="slot2">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div>
+                            <div id="machine3" class="slot3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end slot progressbar -->
+
+        </div>
+        <!-- Fomulario -->
+        <div class="slotForm" id="slotForm">
+            <div class="row">
+                <div class="formSlot" id="formSlot">
+                    <div class="form1" id="form1">
+                        <!-- bloque uno -->
+                        <label for="nombre">Nombre (s)</label><br>
+                        <input type="text" name="nombre" id="nombre" placeholder="ESCRIBE TU NOMBRE"><br><br>
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="apellidoPaterno">Apellido Paterno</label><br>
+                                <input type="text" name="nombre" id="apellidoPat" placeholder="PATERNO"><br><br></div>
+                            <div class="col-6">
+                                <label for="apellidoMaterno" id="labelMat">Apellido Materno</label><br>
+                                <input type="text" name="nombre" id="apellidoMat" placeholder="MATERNO"><br><br></div>
+                        </div>
+                    </div>
+                    <label for="nacimiento">Nacimiento</label><br>
+                    <input type="text" name="nacimiento" id="nacimiento" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="ELIGE TU FECHA DE NACIMIENTO "><br><br>
+                    <!-- end bloque uno -->
+                    <!-- bloque dos -->
+                    <label for="cel">Celular</label><br>
+                    <input type="text" name="cel" id="celular" placeholder="INGRESA TU CELULAR"><br><br>
+                    <label for="confirmaCel">Confirma Celular</label><br>
+                    <input type="text" name="confirmaCel" id="confirmaCel" placeholder="CONFIRMA TU CELULAR"><br><br>
+                    <label for="email">E-mail</label><br>
+                    <input type="text" name="email" id="email" placeholder="ESCRIBE TU E-MAIL"><br><br>
+                    <!-- end bloque dos -->
+
+                    <!-- bloque tres -->
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="sex">Sexo</label>
+                            <div class="sex">
+                                <input type="checkbox" id="masc" class="masc" name="masculino" value="M">
+                                <label for="masc" id="labelmasc"><span></span> M</label>
+                                <input type="checkbox" id="fem" class="fem" name="femenino" value="F">
+                                <label for="fem"><span></span> F</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label for="codPost" id="codPostL">Código Postal</label><br>
+                            <input type="text" name="codPost" id="codPost" placeholder="01000"><br>
+                        </div>
+                        <label for="pin">PIN CONFIDENCIAL</label><br>
+                        <input type="password" name="pin" id="pin" placeholder="PIN DE 4 DÍGITOS"><br><br><br>
+                        <label for="confirmaPin">CONFIRMA TU PIN</label><br>
+                        <input type="password" name="confirmaPin" id="confirmaPin" placeholder="CONFIRMA PIN DE 4 DÍGITOS"><br><br>
+                        <div class="terminos" style="margin-top: 20px;">
+                            <input type="checkbox" checked id="acepto" class="terms" name="acepto" value="Acepto todas las condiciones">
+                            <label for="acepto" style="font-size: 18px;"><span></span>Acepto<a href="#" onclick="abrirPopup2();"> aviso de
+                                    privacidad</a> y todos los <a href="#" onclick="abrirPopup();"> términos y
+                                    condiciones</a></label>
+                        </div>
+                        <!-- end bloque tres -->
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- botones -->
+    <input type="button" id="button1" class="randomizeButton" value="">
+    <input type="button" id="button2" class="randomizeButton" value="">
+    <input type="button" id="button3" class="randomizeButton" value="">
+    <input type="button" id="arrowizq1" class="btnizq" value="">
+    <input type="button" id="arrowizq2" class="btnizq" value="">
+    <input type="button" id="arrowder1" class="btnder" value="">
+    <input type="button" id="arrowder2" class="btnder" value="">
+    <div class="base-btn"></div>
+    <!-- arrow pasalista -->
+    <div id="colContent">
+        <div class="textSocio">
+            <h1 class="socioText1">¿Ya eres <b>SOCIO</b>?</h1>
+            <h1 class="socioText2">Desliza tu <b>TARJETA</b> aquí</h1>
+        </div>
+        <div class="arrow"></div>
+        <!-- <input type="button" value="" id="btn-tour">
+        <input type="button" value="" id="btn-invit"> -->
+    </div>
+    <!-- end arrow pasalista -->
+    </div>
+    <!-- popup terminos / privacidad -->
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <div class="terminos">
+                <h4>Términos y condiciones</h4><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet dolor lectus eu libero. Vestibulum venenatis eget turpis sed faucibus. Maecenas in ullamcorper orci,
+                    eu ullamcorper sem. Etiam elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean tristique nisl tellus, sit amet fringilla nisl volutpat cursus. Quisque dignissim lectus ac nunc consectetur mattis. Proin vel hendrerit
+                    ipsum, et lobortis dolor. Vestibulum convallis, nibh et tincidunt tristique, nisl risus facilisis lectus, ut interdum orci nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit sodales posuere eget non est. Fusce convallis
+                    vestibulum dolor non volutpat. Vivamus vestibulum quam ut ultricies pretium.</p>
+                <p>Suspendisse rhoncus fringilla nisl. Mauris eget lorem ac urna consectetur convallis non vel mi. Donec libero dolor, volutpat ut urna sit amet, aliquet molestie purus. Phasellus faucibus, leo vel scelerisque lobortis, ipsum leo sollicitudin
+                    metus, eget sagittis ante orci eu ipsum. Nulla ac mauris eu risus sagittis scelerisque iaculis bibendum mauris. Cras ut egestas orci. Cras odio risus, sagittis ut nunc vitae, aliquam consectetur purus. Vivamus ornare nunc vel tellus
+                    facilisis, quis dictum elit tincidunt. Donec accumsan nisi at laoreet sodales. Cras at ullamcorper massa. Maecenas at facilisis ex. Nam mollis dignissim purus id efficitur.</p>
+                <p>Curabitur eget aliquam erat. Curabitur a neque vitae purus volutpat elementum. Vivamus quis vestibulum leo, efficitur ullamcorper velit. Integer tincidunt finibus metus vel porta. Mauris sed mauris congue, pretium est nec, malesuada purus.
+                    Nulla hendrerit consectetur arcu et lacinia. Suspendisse augue justo, convallis eget arcu in, pretium tempor ligula. Nullam vulputate tincidunt est ut ullamcorper.</p>
+                <p>Curabitur sed sodales leo. Nulla facilisi. Etiam condimentum, nisi id tempor vulputate, nisi justo cursus justo, pellentesque condimentum diam arcu sit amet leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus. In placerat tellus a posuere vehicula. Donec diam massa, efficitur vitae mattis et, pretium in augue. Fusce iaculis mi quis ante venenatis, sit amet pellentesque orci aliquam. Vestibulum elementum posuere vehicula.</p>
+                <p>Sed tincidunt diam a massa pharetra faucibus. Praesent condimentum id arcu nec fringilla. Maecenas faucibus, ante et venenatis interdum, erat mi eleifend dui, at convallis nisl est nec arcu. Duis vitae arcu rhoncus, faucibus magna ut,
+                    tempus metus. Cras in nibh sed ipsum consequat rhoncus. Proin fringilla nulla ut augue tempor fermentum. Nunc hendrerit non nisi vitae finibus. Donec eget ornare libero. Aliquam auctor erat enim, a semper risus semper at. In ut dui
+                    in metus tincidunt euismod eget et lacus. Aenean et dictum urna, sed rhoncus lorem. Duis pharetra sagittis odio. Etiam a libero ut nisi feugiat tincidunt vel vitae turpis. Maecenas vel orci sit amet lorem hendrerit venenatis sollicitudin
+                    ut dui. Quisque rhoncus nibh in massa pretium scelerisque.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet dolor lectus eu libero. Vestibulum venenatis eget turpis sed faucibus. Maecenas in ullamcorper orci,
+                    eu ullamcorper sem. Etiam elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean tristique nisl tellus, sit amet fringilla nisl volutpat cursus. Quisque dignissim lectus ac nunc consectetur mattis. Proin vel hendrerit
+                    ipsum, et lobortis dolor. Vestibulum convallis, nibh et tincidunt tristique, nisl risus facilisis lectus, ut interdum orci nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit sodales posuere eget non est. Fusce convallis
+                    vestibulum dolor non volutpat. Vivamus vestibulum quam ut ultricies pretium.</p>
+                <p>Suspendisse rhoncus fringilla nisl. Mauris eget lorem ac urna consectetur convallis non vel mi. Donec libero dolor, volutpat ut urna sit amet, aliquet molestie purus. Phasellus faucibus, leo vel scelerisque lobortis, ipsum leo sollicitudin
+                    metus, eget sagittis ante orci eu ipsum. Nulla ac mauris eu risus sagittis scelerisque iaculis bibendum mauris. Cras ut egestas orci. Cras odio risus, sagittis ut nunc vitae, aliquam consectetur purus. Vivamus ornare nunc vel tellus
+                    facilisis, quis dictum elit tincidunt. Donec accumsan nisi at laoreet sodales. Cras at ullamcorper massa. Maecenas at facilisis ex. Nam mollis dignissim purus id efficitur.</p>
+                <p>Curabitur eget aliquam erat. Curabitur a neque vitae purus volutpat elementum. Vivamus quis vestibulum leo, efficitur ullamcorper velit. Integer tincidunt finibus metus vel porta. Mauris sed mauris congue, pretium est nec, malesuada purus.
+                    Nulla hendrerit consectetur arcu et lacinia. Suspendisse augue justo, convallis eget arcu in, pretium tempor ligula. Nullam vulputate tincidunt est ut ullamcorper.</p>
+                <p>Curabitur sed sodales leo. Nulla facilisi. Etiam condimentum, nisi id tempor vulputate, nisi justo cursus justo, pellentesque condimentum diam arcu sit amet leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus. In placerat tellus a posuere vehicula. Donec diam massa, efficitur vitae mattis et, pretium in augue. Fusce iaculis mi quis ante venenatis, sit amet pellentesque orci aliquam. Vestibulum elementum posuere vehicula.</p>
+                <p>Sed tincidunt diam a massa pharetra faucibus. Praesent condimentum id arcu nec fringilla. Maecenas faucibus, ante et venenatis interdum, erat mi eleifend dui, at convallis nisl est nec arcu. Duis vitae arcu rhoncus, faucibus magna ut,
+                    tempus metus. Cras in nibh sed ipsum consequat rhoncus. Proin fringilla nulla ut augue tempor fermentum. Nunc hendrerit non nisi vitae finibus. Donec eget ornare libero. Aliquam auctor erat enim, a semper risus semper at. In ut dui
+                    in metus tincidunt euismod eget et lacus. Aenean et dictum urna, sed rhoncus lorem. Duis pharetra sagittis odio. Etiam a libero ut nisi feugiat tincidunt vel vitae turpis. Maecenas vel orci sit amet lorem hendrerit venenatis sollicitudin
+                    ut dui. Quisque rhoncus nibh in massa pretium scelerisque.</p>
+            </div>
+
+        </div>
+        <button type="button" class="btn-terms" id="btn-term">ACEPTAR</button>
+    </div>
+    <div class="overlay2" id="overlay2">
+        <div class="popup2" id="popup2">
+            <div class="privacidad">
+                <h4>Aviso de privacidad</h4><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet dolor lectus eu libero. Vestibulum venenatis eget turpis sed faucibus. Maecenas in ullamcorper orci,
+                    eu ullamcorper sem. Etiam elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean tristique nisl tellus, sit amet fringilla nisl volutpat cursus. Quisque dignissim lectus ac nunc consectetur mattis. Proin vel hendrerit
+                    ipsum, et lobortis dolor. Vestibulum convallis, nibh et tincidunt tristique, nisl risus facilisis lectus, ut interdum orci nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit sodales posuere eget non est. Fusce convallis
+                    vestibulum dolor non volutpat. Vivamus vestibulum quam ut ultricies pretium.</p>
+                <p>Suspendisse rhoncus fringilla nisl. Mauris eget lorem ac urna consectetur convallis non vel mi. Donec libero dolor, volutpat ut urna sit amet, aliquet molestie purus. Phasellus faucibus, leo vel scelerisque lobortis, ipsum leo sollicitudin
+                    metus, eget sagittis ante orci eu ipsum. Nulla ac mauris eu risus sagittis scelerisque iaculis bibendum mauris. Cras ut egestas orci. Cras odio risus, sagittis ut nunc vitae, aliquam consectetur purus. Vivamus ornare nunc vel tellus
+                    facilisis, quis dictum elit tincidunt. Donec accumsan nisi at laoreet sodales. Cras at ullamcorper massa. Maecenas at facilisis ex. Nam mollis dignissim purus id efficitur.</p>
+                <p>Curabitur eget aliquam erat. Curabitur a neque vitae purus volutpat elementum. Vivamus quis vestibulum leo, efficitur ullamcorper velit. Integer tincidunt finibus metus vel porta. Mauris sed mauris congue, pretium est nec, malesuada purus.
+                    Nulla hendrerit consectetur arcu et lacinia. Suspendisse augue justo, convallis eget arcu in, pretium tempor ligula. Nullam vulputate tincidunt est ut ullamcorper.</p>
+                <p>Curabitur sed sodales leo. Nulla facilisi. Etiam condimentum, nisi id tempor vulputate, nisi justo cursus justo, pellentesque condimentum diam arcu sit amet leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus. In placerat tellus a posuere vehicula. Donec diam massa, efficitur vitae mattis et, pretium in augue. Fusce iaculis mi quis ante venenatis, sit amet pellentesque orci aliquam. Vestibulum elementum posuere vehicula.</p>
+                <p>Sed tincidunt diam a massa pharetra faucibus. Praesent condimentum id arcu nec fringilla. Maecenas faucibus, ante et venenatis interdum, erat mi eleifend dui, at convallis nisl est nec arcu. Duis vitae arcu rhoncus, faucibus magna ut,
+                    tempus metus. Cras in nibh sed ipsum consequat rhoncus. Proin fringilla nulla ut augue tempor fermentum. Nunc hendrerit non nisi vitae finibus. Donec eget ornare libero. Aliquam auctor erat enim, a semper risus semper at. In ut dui
+                    in metus tincidunt euismod eget et lacus. Aenean et dictum urna, sed rhoncus lorem. Duis pharetra sagittis odio. Etiam a libero ut nisi feugiat tincidunt vel vitae turpis. Maecenas vel orci sit amet lorem hendrerit venenatis sollicitudin
+                    ut dui. Quisque rhoncus nibh in massa pretium scelerisque.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet dolor lectus eu libero. Vestibulum venenatis eget turpis sed faucibus. Maecenas in ullamcorper orci,
+                    eu ullamcorper sem. Etiam elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean tristique nisl tellus, sit amet fringilla nisl volutpat cursus. Quisque dignissim lectus ac nunc consectetur mattis. Proin vel hendrerit
+                    ipsum, et lobortis dolor. Vestibulum convallis, nibh et tincidunt tristique, nisl risus facilisis lectus, ut interdum orci nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit sodales posuere eget non est. Fusce convallis
+                    vestibulum dolor non volutpat. Vivamus vestibulum quam ut ultricies pretium.</p>
+                <p>Suspendisse rhoncus fringilla nisl. Mauris eget lorem ac urna consectetur convallis non vel mi. Donec libero dolor, volutpat ut urna sit amet, aliquet molestie purus. Phasellus faucibus, leo vel scelerisque lobortis, ipsum leo sollicitudin
+                    metus, eget sagittis ante orci eu ipsum. Nulla ac mauris eu risus sagittis scelerisque iaculis bibendum mauris. Cras ut egestas orci. Cras odio risus, sagittis ut nunc vitae, aliquam consectetur purus. Vivamus ornare nunc vel tellus
+                    facilisis, quis dictum elit tincidunt. Donec accumsan nisi at laoreet sodales. Cras at ullamcorper massa. Maecenas at facilisis ex. Nam mollis dignissim purus id efficitur.</p>
+                <p>Curabitur eget aliquam erat. Curabitur a neque vitae purus volutpat elementum. Vivamus quis vestibulum leo, efficitur ullamcorper velit. Integer tincidunt finibus metus vel porta. Mauris sed mauris congue, pretium est nec, malesuada purus.
+                    Nulla hendrerit consectetur arcu et lacinia. Suspendisse augue justo, convallis eget arcu in, pretium tempor ligula. Nullam vulputate tincidunt est ut ullamcorper.</p>
+                <p>Curabitur sed sodales leo. Nulla facilisi. Etiam condimentum, nisi id tempor vulputate, nisi justo cursus justo, pellentesque condimentum diam arcu sit amet leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus. In placerat tellus a posuere vehicula. Donec diam massa, efficitur vitae mattis et, pretium in augue. Fusce iaculis mi quis ante venenatis, sit amet pellentesque orci aliquam. Vestibulum elementum posuere vehicula.</p>
+                <p>Sed tincidunt diam a massa pharetra faucibus. Praesent condimentum id arcu nec fringilla. Maecenas faucibus, ante et venenatis interdum, erat mi eleifend dui, at convallis nisl est nec arcu. Duis vitae arcu rhoncus, faucibus magna ut,
+                    tempus metus. Cras in nibh sed ipsum consequat rhoncus. Proin fringilla nulla ut augue tempor fermentum. Nunc hendrerit non nisi vitae finibus. Donec eget ornare libero. Aliquam auctor erat enim, a semper risus semper at. In ut dui
+                    in metus tincidunt euismod eget et lacus. Aenean et dictum urna, sed rhoncus lorem. Duis pharetra sagittis odio. Etiam a libero ut nisi feugiat tincidunt vel vitae turpis. Maecenas vel orci sit amet lorem hendrerit venenatis sollicitudin
+                    ut dui. Quisque rhoncus nibh in massa pretium scelerisque.</p>
+            </div>
+        </div>
+        <button type="button" class="btn-priv" id="btn-priv">ACEPTAR</button>
+        <!-- end popup terminos / privacidad -->
+    </div>
+</body>
+<!-- libs js -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/anime.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+
+</html>
